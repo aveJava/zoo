@@ -5,6 +5,7 @@ import Foods.Food;
 public class Cat {
     private String name;
     private int age;
+    private int weight;     // вес кота
 
     public Cat(String name, int age) {
         this.name = name;
@@ -12,7 +13,7 @@ public class Cat {
     }
 
     public void say () {
-
+        System.out.println("Мяу!");
     }
 
     public void eat (Food food) {
