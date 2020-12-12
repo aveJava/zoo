@@ -12,7 +12,12 @@ public class Cat {
     }
 
     public void say () {
-
+        if (this.age<2) {
+            System.out.println("Мяу");
+        }
+        else {
+            System.out.println("Давай жрать!!!");
+        }
     }
 
     public void eat (Food food) {
