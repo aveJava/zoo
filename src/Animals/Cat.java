@@ -5,7 +5,7 @@ import Foods.Food;
 public class Cat {
     private String name;
     private int age;
-    private int weight;     // вес кота
+    private String color;
 
     public Cat(String name, int age) {
         this.name = name;
@@ -13,7 +13,12 @@ public class Cat {
     }
 
     public void say () {
-        System.out.println("Мяу!");
+        if (this.age<2) {
+            System.out.println("Мяу");
+        }
+        else {
+            System.out.println("Давай жрать!!!");
+        }
     }
 
     public void eat (Food food) {
