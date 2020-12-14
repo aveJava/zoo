@@ -1,5 +1,7 @@
 package Animals;
 
+import Foods.Meat;
+
 public class Dog
 {
     String name;
@@ -16,5 +18,9 @@ public class Dog
 
     public void run() {
         System.out.println( "Собачка бежит как угорелая!" );
+    }
+
+    public void eatMeat( Meat meat ) {
+        System.out.println( "Ммм какое вкусное " + meat );
     }
 }
