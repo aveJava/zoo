@@ -1,7 +1,7 @@
-import Animals.Cat;
-import Animals.Dog;
-import Foods.Fish;
-import Foods.Meat;
+import animals.Cat;
+import animals.Dog;
+import foods.Fish;
+import foods.Meat;
 
 public class Main {
     public static void main(String[] args) {

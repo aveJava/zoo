@@ -1,6 +1,6 @@
-package Animals;
+package animals;
 
-import Foods.Meat;
+import foods.Food;
 
 public class Dog
 {
@@ -20,7 +20,7 @@ public class Dog
         System.out.println( "Собачка бежит как угорелая!" );
     }
 
-    public void eatMeat( Meat meat ) {
-        System.out.println( "Ммм какое вкусное " + meat );
+    public void eatMeat( Food food) {
+        System.out.println( "Ммм какое вкусное " + food.meatName );
     }
 }
