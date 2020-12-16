@@ -1,26 +1,26 @@
 package Animals;
 
-import Foods.Meat;
+import Foods.Food;
 
-public class Dog
+public class Dog extends Animal
 {
-    String name;
-    int age;
-
     public Dog( String name, int age ) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
     }
 
-    public void bark() {
+    @Override
+    public void say() {
         System.out.println( "Гав!" );
     }
 
-    public void run() {
+    @Override
+    public void move() {
         System.out.println( "Собачка бежит как угорелая!" );
     }
 
-    public void eatMeat( Meat meat ) {
-        System.out.println( "Ммм какое вкусное " + meat );
+    @Override
+    public boolean eat(Food food) {
+        System.out.println( "Ммм какое вкусное " + Food.accusativeName );
+        return Math.random() * 1 > 0;
     }
 }

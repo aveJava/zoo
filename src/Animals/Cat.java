@@ -2,16 +2,13 @@ package Animals;
 
 import Foods.Food;
 
-public class Cat {
-    private String name;
-    private int age;
-    private String color;
-
+public class Cat extends Animal
+{
     public Cat(String name, int age) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
     }
 
+    @Override
     public void say () {
         if (this.age<2) {
             System.out.println("Мяу");
@@ -21,7 +18,14 @@ public class Cat {
         }
     }
 
-    public void eat (Food food) {
-        System.out.println(this.name + " ест " + food.accusativeName);
+    @Override
+    public void move() {
+        System.out.println( "Кошка идет грациозно!");
+    }
+
+    @Override
+    public boolean eat (Food food) {
+        System.out.println( this.name + " ест " + Food.accusativeName);
+        return Math.random() * 1 > 0;
     }
 }
