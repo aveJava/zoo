@@ -1,16 +1,22 @@
+import Animals.Animal;
 import Animals.Cat;
 import Animals.Dog;
 import Foods.Fish;
-import Foods.Meat;
 
-public class Main {
-    public static void main(String[] args) {
-        Cat catVaska = new Cat("Васька", 5);
-        catVaska.eat(new Fish());
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Animal[] animals = {
+                new Cat("Васька", 5),
+                new Dog("Мухтар", 3),
+                new Cat( "Борис", 2 )
+        };
 
-        Dog muhtar = new Dog( "Мухтар", 3 );
-        muhtar.run();
-        muhtar.bark();
-        muhtar.eatMeat( new Meat() );
+        for( Animal animal : animals ) {
+            animal.move();
+            animal.say();
+            animal.eat(new Fish());
+        }
     }
 }
