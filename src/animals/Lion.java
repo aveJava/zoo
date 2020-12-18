@@ -1,26 +1,26 @@
 package animals;
 
 import foods.Food;
+import foods.Meat;
 
-public class Dog
-{
+public class Lion {
     String name;
     int age;
 
-    public Dog( String name, int age ) {
+    public Lion(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public void bark() {
-        System.out.println( "Гав!" );
+    public void roar() {
+        System.out.println( "Рррр!" );
     }
 
     public void run() {
-        System.out.println( "Собачка бежит как угорелая!" );
+        System.out.println( "Лев сидит на попе!" );
     }
 
-    public void eat(Food food) {
+    public void eatMeat( Meat food) {
         System.out.println( "Ммм какое вкусное " + food.productName );
     }
 }
