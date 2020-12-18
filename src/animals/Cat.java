@@ -1,6 +1,6 @@
-package Animals;
+package animals;
 
-import Foods.Food;
+import foods.Food;
 
 public class Cat {
     private String name;

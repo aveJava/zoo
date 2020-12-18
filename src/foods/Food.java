@@ -1,4 +1,4 @@
-package Foods;
+package foods;
 
 public class Food {
     public static String productName;
