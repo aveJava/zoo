@@ -1,8 +1,14 @@
 package foods;
 
 public class Meat extends Food {
-    {
-        productName = "Мясо";
-        accusativeName = "Мясо";
+    public static String productName = "Мясо";
+    public static String accusativeName = "Мясо";
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public String getAccusativeName() {
+        return accusativeName;
     }
 }
