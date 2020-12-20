@@ -21,6 +21,6 @@ public class Dog
     }
 
     public void eat(Food food) {
-        System.out.println( "Ммм какое вкусное " + food.productName );
+        System.out.println( "Ммм какое вкусное " + food.getAccusativeName() );
     }
 }

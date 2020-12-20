@@ -22,6 +22,6 @@ public class Cat {
     }
 
     public void eat (Food food) {
-        System.out.println(this.name + " ест " + food.accusativeName);
+        System.out.println(this.name + " ест " + food.getAccusativeName());
     }
 }

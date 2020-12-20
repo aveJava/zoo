@@ -21,6 +21,6 @@ public class Lion {
     }
 
     public void eatMeat( Meat food) {
-        System.out.println( "Ммм какое вкусное " + food.productName );
+        System.out.println( "Ммм какое вкусное " + food.getAccusativeName() );
     }
 }

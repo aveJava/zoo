@@ -21,7 +21,7 @@ public class Giraffe {
     }
 
     public void eatLeaves (Vegetation food) {
-        System.out.println( "Ммм какие вкусные " + food.productName );
+        System.out.println( "Ммм какие вкусные " + food.getAccusativeName() );
     }
 
 }
